@@ -59,7 +59,9 @@ fun main(args: Array<String>){
         showInfo("PWM 11 | Decrease position set: $i")
     }
 
-Thread.sleep(300)
+    Thread.sleep(300)
+
+    gpio.shutdown()
 }
 
 private fun showInfo(customMsg: String){

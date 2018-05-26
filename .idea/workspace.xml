@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e330a1-7083-4970-a7c4-a87544577c3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PCA9685MotorControl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MCP23S17MotorControl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MotorControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorControl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PCA9685MotorControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PCA9685MotorControl.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="MainPwmPin.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+            <state relative-caret-position="414">
+              <caret line="31" column="26" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="31" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -40,17 +40,29 @@
       <file leaf-file-name="MotorControl.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PCA9685MotorControl.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MCP23S17MotorControl.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="563">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+              <folding>
+                <element signature="e#1#438#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PCA9685MotorControl.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PCA9685MotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="378">
+              <caret line="79" column="1" lean-forward="true" selection-start-line="72" selection-end-line="79" selection-end-column="1" />
               <folding>
                 <element signature="e#0#323#0" expanded="true" />
               </folding>
@@ -95,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/MainPwmPin.kt" />
         <option value="$PROJECT_DIR$/src/MotorControl.kt" />
         <option value="$PROJECT_DIR$/src/PCA9685MotorControl.kt" />
+        <option value="$PROJECT_DIR$/src/MCP23S17MotorControl.kt" />
       </list>
     </option>
   </component>
@@ -207,7 +220,7 @@
       <option name="usingKey" value="false" />
       <option name="vmParameters" value="" />
       <option name="moduleName" value="RaspiTests" />
-      <option name="mainclass" value="PCA9685MotorControlKt" />
+      <option name="mainclass" value="MCP23S17MotorControlKt" />
     </configuration>
     <configuration default="true" type="Run as an Embedded Java application" factoryName="Embedded Linux JVM">
       <option name="classesDirectory" />
@@ -284,12 +297,12 @@
       <workItem from="1525369683262" duration="3752000" />
       <workItem from="1525522091990" duration="5272000" />
       <workItem from="1525801313393" duration="1984000" />
-      <workItem from="1527310705095" duration="11008000" />
+      <workItem from="1527310705095" duration="19355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22572000" />
+    <option name="totallyTimeSpent" value="30919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1279" y="-11" width="1922" height="1092" extended-state="6" />
@@ -436,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -453,19 +459,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
+    <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+        <state relative-caret-position="414">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PCA9685MotorControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state relative-caret-position="378">
+          <caret line="79" column="1" lean-forward="true" selection-start-line="72" selection-end-line="79" selection-end-column="1" />
           <folding>
             <element signature="e#0#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+          <folding>
+            <element signature="e#1#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
