@@ -19,7 +19,7 @@ fun main(args: Array<String>){
 
     println("<--Pi4J--> MCP23S17 GPIO Example ... started.")
 
-    // create custom MCP23017 GPIO provider
+    // create custom MCP23S17 GPIO provider
     val provider = MCP23S17GpioProvider(MCP23S17GpioProvider.ADDRESS_0, SpiChannel.CS0)
     println("MCP23S17 Found: ${ provider != null }")
 
