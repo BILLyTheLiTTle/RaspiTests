@@ -22,12 +22,17 @@ fun main(args: Array<String>){
 
     //pinUD.high()
 
+    // It seems that this is working
     pinCS.high()
     pinUD.high()
     pinInc.high()
     pinCS.low()
     pinInc.low()
     pinCS.high()
+
+    // TODO Find out how pinUD (Up / Down) is working
+
+    // TODO Add an analog IC to read the values to make sure everything is working just fine
 
     Thread.sleep(5000)
 
