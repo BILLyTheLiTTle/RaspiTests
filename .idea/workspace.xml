@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e330a1-7083-4970-a7c4-a87544577c3b" name="Default" comment="" />
+    <list default="true" id="75e330a1-7083-4970-a7c4-a87544577c3b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/X9C104MotorControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/X9C104MotorControl.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +17,8 @@
       <file leaf-file-name="MainSoftPwmPin.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#131#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="10" column="77" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -36,8 +35,8 @@
       <file leaf-file-name="MotorControl.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="401">
+              <caret line="142" column="5" selection-start-line="134" selection-start-column="4" selection-end-line="142" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -45,11 +44,17 @@
       <file leaf-file-name="MCP23S17MotorControl.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-              <folding>
-                <element signature="e#1#438#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MCP23S17MotorControlArbitraryGpioCS.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControlArbitraryGpioCS.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -57,23 +62,8 @@
       <file leaf-file-name="MCP23017MotorControl.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MCP23017MotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-481">
-              <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-              <folding>
-                <element signature="e#1#437#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="X9C104MotorControl.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/X9C104MotorControl.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#68#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -83,20 +73,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="972">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="e#0#323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainDigitalPin.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainDigitalPin.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#186#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -130,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/MCP23S17MotorControl.kt" />
         <option value="$PROJECT_DIR$/src/MCP23017MotorControl.kt" />
         <option value="$PROJECT_DIR$/src/XC104MotorControl.kt" />
+        <option value="$PROJECT_DIR$/src/MCP23S17MotorControlArbitraryGpioCS.kt" />
         <option value="$PROJECT_DIR$/src/X9C104MotorControl.kt" />
       </list>
     </option>
@@ -154,6 +131,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,15 +144,21 @@
             <path>
               <item name="RaspiTests" type="b2602c69:ProjectViewProjectNode" />
               <item name="RaspiTests" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaspiTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RaspiTests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaspiTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,7 +229,7 @@
       <option name="usingKey" value="false" />
       <option name="vmParameters" value="" />
       <option name="moduleName" value="RaspiTests" />
-      <option name="mainclass" value="X9C104MotorControlKt" />
+      <option name="mainclass" value="MCP23S17MotorControlArbitraryGpioCSKt" />
     </configuration>
     <configuration default="true" type="Run as an Embedded Java application" factoryName="Embedded Linux JVM">
       <option name="classesDirectory" />
@@ -326,10 +312,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37622000" />
+    <option name="totallyTimeSpent" value="39054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1279" y="-11" width="1922" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -340,25 +327,47 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32991803" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32991803" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32991803" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32924336" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32991803" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32991803" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32991803" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,9 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -396,18 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainDigitalPin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#186#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -415,9 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
-          <folding>
-            <element signature="e#1#438#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -425,9 +416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -449,9 +437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,9 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -490,9 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,9 +479,193 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="72">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="31" column="26" selection-start-line="15" selection-start-column="4" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PCA9685MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23017MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/X9C104MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="77" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="142" column="5" selection-start-line="134" selection-start-column="4" selection-end-line="142" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/com/pi4j/io/spi/SpiChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pi4j-gpio-extension/src/main/java/com/pi4j/gpio/extension/base/AdcGpioProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PCA9685MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainDigitalPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#131#0" expanded="true" />
+            <element signature="e#0#186#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -534,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="401">
+          <caret line="142" column="5" selection-start-line="134" selection-start-column="4" selection-end-line="142" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -543,49 +706,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#1#438#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainSoftPwmPin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#131#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="10" column="77" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MCP23017MotorControl.kt">
+    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret line="24" column="67" lean-forward="true" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-          <folding>
-            <element signature="e#1#437#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/X9C104MotorControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="432">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23017MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControlArbitraryGpioCS.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
@@ -606,7 +761,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

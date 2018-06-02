@@ -23,6 +23,7 @@ fun main(args: Array<String>){
     //pinUD.high()
 
     // It seems that this is working
+    // More or less I followed these guidelines (http://www.instructables.com/id/X9C103P-Basic-Operation/)
     pinCS.high()
     pinUD.high()
     pinInc.high()
