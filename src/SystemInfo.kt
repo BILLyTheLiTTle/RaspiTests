@@ -1,9 +1,6 @@
-import com.pi4j.platform.PlatformManager;
-import com.pi4j.system.NetworkInfo;
-import com.pi4j.system.SystemInfo;
-
-import java.io.IOException;
-import java.text.ParseException;
+import com.pi4j.platform.PlatformManager
+import com.pi4j.system.NetworkInfo
+import com.pi4j.system.SystemInfo
 
 /**
  * This example code demonstrates how to access a few of the system information properties and
@@ -11,11 +8,7 @@ import java.text.ParseException;
  *
  * @author Robert Savage
  */
-object SystemInfo {
-
-    @Throws(InterruptedException::class, IOException::class, ParseException::class)
-    @JvmStatic
-    fun main(args: Array<String>) {
+fun main(args: Array<String>) {
 
         // display a few of the available system information properties
         println("----------------------------------------------------")
@@ -277,4 +270,3 @@ object SystemInfo {
         println()
         println("Exiting SystemInfoExample")
     }
-}
