@@ -2,6 +2,7 @@ import com.pi4j.component.servo.impl.RPIServoBlasterProvider
 import java.io.FileOutputStream
 import java.io.PrintWriter
 
+// IMSTALL: It looks like I just cloned the repo, cd inside user folder and only run "make"
 fun main(args: Array<String>){
 
     // start servo blaster

@@ -27,9 +27,9 @@ fun main(args: Array<String>){
     )
     val pwmM2 = gpio.provisionPwmOutputPin(pinPwmMotor2)
 
-    Gpio.pwmSetMode(Gpio.PWM_MODE_MS);
-    Gpio.pwmSetRange(100);
-    Gpio.pwmSetClock(500);
+    Gpio.pwmSetMode(Gpio.PWM_MODE_MS)
+    Gpio.pwmSetRange(100)
+    Gpio.pwmSetClock(500)
 
     val pinDig2Motor1 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_06, "pinDig2Motor1")
     val pinEnableMotor1 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_05, "pinEnableMotor1")
