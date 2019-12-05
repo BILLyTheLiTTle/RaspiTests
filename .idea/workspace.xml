@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e330a1-7083-4970-a7c4-a87544577c3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BTS7960MotorDriverFrom74HC4053.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverFrom74HC4053Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverFrom74HC4053Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MCP23017MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MCP23017MotorControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlArbitraryGpioCSKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlArbitraryGpioCSKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MainDigitalPinKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MainDigitalPinKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MainPwmPinKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MainPwmPinKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MainSoftPwmPinKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MainSoftPwmPinKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorPwmControl74HC4053Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorPwmControl74HC4053Kt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/PCA9685MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/PCA9685MotorControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/ShiftRegisterMotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/ShiftRegisterMotorControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/SystemInfoKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/SystemInfoKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/TemperaturesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/TemperaturesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/X9C104MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/X9C104MotorControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServoControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServoControl.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,104 +33,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="289658190">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.104" value="1" />
-          <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.52" value="1" />
-          <entry key="project.open.time.57" value="1" />
-          <entry key="project.open.time.58" value="1" />
-          <entry key="project.open.time.95" value="1" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="kt" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Kotlin" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="kt" value="2481" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Kotlin" value="2481" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainDigitalPin.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="36" column="1" selection-start-line="10" selection-end-line="36" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ShiftRegisterMotorControl.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1278">
-              <caret line="79" column="5" selection-start-line="71" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MotorPwmControl74HC4053.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="51" column="19" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="51" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriver.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="98" column="5" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriverFrom74HC4053.kt">
+        <entry file="file://$PROJECT_DIR$/src/ServoControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+            <state relative-caret-position="162">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding>
-                <element signature="e#0#141#0" expanded="true" />
+                <element signature="e#0#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,14 +64,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../RCCar" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../RaspiSpringBoot/RaspiSpringboot" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -155,17 +79,11 @@
         <option value="$PROJECT_DIR$/src/ShiftRegisterMotorControl.kt" />
         <option value="$PROJECT_DIR$/src/MainPwmPin.kt" />
         <option value="$PROJECT_DIR$/src/MotorPwmControl74HC4053.kt" />
-        <option value="$PROJECT_DIR$/src/ServoControl.kt" />
         <option value="$PROJECT_DIR$/src/BTS7960MotorDriver.kt" />
         <option value="$PROJECT_DIR$/src/BTS7960MotorDriverFrom74HC4053.kt" />
+        <option value="$PROJECT_DIR$/src/ServoControl.kt" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1279" />
@@ -178,9 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,12 +121,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544337060602" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544337232108" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/pi4j-gpio-extension.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,7 +149,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Embedded Linux JVM.Raspberry Pi 3">
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -245,6 +162,7 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -276,7 +194,7 @@
       <option name="usingKey" value="false" />
       <option name="vmParameters" value="" />
       <option name="moduleName" value="RaspiTests" />
-      <option name="mainclass" value="BTS7960MotorDriverFrom74HC4053Kt" />
+      <option name="mainclass" value="ServoControlKt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -299,7 +217,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -307,11 +225,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -354,18 +272,20 @@
       <workItem from="1537594807593" duration="1990000" />
       <workItem from="1541224521947" duration="4345000" />
       <workItem from="1544245950687" duration="10008000" />
-      <workItem from="1544333182621" duration="3822000" />
+      <workItem from="1544333182621" duration="4480000" />
+      <workItem from="1545713530102" duration="569000" />
+      <workItem from="1575564017281" duration="1602000" />
+      <workItem from="1575566005023" duration="3836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69246000" />
+    <option name="totallyTimeSpent" value="75911000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1279" y="-11" width="1922" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="1280" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27374598" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28335112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -374,7 +294,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,7 +303,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991803" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3294979" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32948583" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -393,13 +314,11 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/com/pi4j/io/spi/SpiChannel.class">
@@ -483,17 +402,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServoControl.kt">
+    <entry file="jar://$PROJECT_DIR$/lib/pi4j-device.jar!/com/pi4j/component/servo/impl/RPIServoBlasterProvider.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainDigitalPin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="36" column="1" selection-start-line="10" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="-2484">
+          <caret line="3" column="2" lean-forward="true" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -504,17 +416,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainDigitalPin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" column="1" selection-start-line="10" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainPwmPin.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1278">
+        <state relative-caret-position="862">
           <caret line="79" column="5" selection-start-line="71" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MotorPwmControl74HC4053.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="51" column="19" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="51" selection-end-column="19" />
+        <state relative-caret-position="862">
+          <caret line="51" column="19" selection-start-line="48" selection-start-column="4" selection-end-line="51" selection-end-column="19" />
           <folding>
             <element signature="e#0#141#0" expanded="true" />
           </folding>
@@ -523,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriver.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="862">
+          <caret line="98" column="5" selection-start-line="92" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
           <folding>
             <element signature="e#0#98#0" expanded="true" />
           </folding>
@@ -533,10 +452,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriverFrom74HC4053.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+        <state relative-caret-position="615">
+          <caret line="102" column="16" lean-forward="true" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
           <folding>
             <element signature="e#0#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServoControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
