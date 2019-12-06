@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e330a1-7083-4970-a7c4-a87544577c3b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverFrom74HC4053Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverFrom74HC4053Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/BTS7960MotorDriverKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MCP23017MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MCP23017MotorControlKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlArbitraryGpioCSKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlArbitraryGpioCSKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MCP23S17MotorControlKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MainDigitalPinKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MainDigitalPinKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MainPwmPinKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MainPwmPinKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MainSoftPwmPinKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MainSoftPwmPinKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt$main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorControlKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/MotorPwmControl74HC4053Kt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/MotorPwmControl74HC4053Kt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/PCA9685MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/PCA9685MotorControlKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/ShiftRegisterMotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/ShiftRegisterMotorControlKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/SystemInfoKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/SystemInfoKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/TemperaturesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/TemperaturesKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/X9C104MotorControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/X9C104MotorControlKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServoControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServoControl.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ServoControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="216">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding>
                 <element signature="e#0#119#0" expanded="true" />
               </folding>
@@ -96,6 +74,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,8 +101,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPwmPinKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPwmPinKt" type="JetRunConfigurationType" factoryName="Kotlin" nameIsGenerated="true">
       <module name="RaspiTests" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -238,11 +216,6 @@
       <item itemvalue="Embedded Linux JVM.Raspberry Pi 3" />
       <item itemvalue="Kotlin.MainPwmPinKt" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.MainPwmPinKt" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -276,16 +249,17 @@
       <workItem from="1545713530102" duration="569000" />
       <workItem from="1575564017281" duration="1602000" />
       <workItem from="1575566005023" duration="3836000" />
+      <workItem from="1575666510075" duration="3321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75911000" />
+    <option name="totallyTimeSpent" value="79232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28335112" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28655282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -462,8 +436,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServoControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="216">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="e#0#119#0" expanded="true" />
           </folding>
