@@ -40,7 +40,7 @@ fun main(args: Array<String>){
     //Thread.sleep(1550)
 
     // Example 2
-    val out = PrintWriter(FileOutputStream("/dev/servoblaster"), true)
+    /*val out = PrintWriter(FileOutputStream("/dev/servoblaster"), true)
     println("Go to 65 again")
     out.println("5=65")
     out.flush()
@@ -56,7 +56,7 @@ fun main(args: Array<String>){
     //println("Go to 0 again")
     //out.println("5=0")
     //out.flush()
-    //Thread.sleep(3000)
+    //Thread.sleep(3000)*/
 
     // kill servo blaster
     //Runtime.getRuntime().exec("killall servod")
