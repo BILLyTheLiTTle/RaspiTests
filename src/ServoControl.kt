@@ -1,6 +1,5 @@
 import com.pi4j.component.servo.impl.RPIServoBlasterProvider
-import java.io.FileOutputStream
-import java.io.PrintWriter
+
 
 // INSTALL: It looks like I just cloned the repo, cd inside user folder and only run "make install" to autostart
 // I may need to run sudo ./servod as well.
@@ -57,6 +56,26 @@ fun main(args: Array<String>){
     //out.println("5=0")
     //out.flush()
     //Thread.sleep(3000)*/
+
+    // Example 3
+    val servoId = 5
+    val script = "/home/pi/ServoHardwareSteering.sh"
+    val cmdMinPosition = "$script $servoId 65"
+    val cmdMidPosition = "$script $servoId 150"
+    val cmdMaxPosition = "$script $servoId 235"
+
+    val runtime = Runtime.getRuntime()
+    println(cmdMidPosition)
+    runtime.exec(cmdMidPosition)//.waitFor()
+    Thread.sleep(1550)
+    println(cmdMinPosition)
+    runtime.exec(cmdMinPosition)//.waitFor()
+    Thread.sleep(1550)
+    println(cmdMaxPosition)
+    runtime.exec(cmdMaxPosition)//.waitFor()
+    Thread.sleep(1550)
+    println(cmdMidPosition)
+    runtime.exec(cmdMidPosition)//.waitFor()
 
     // kill servo blaster
     //Runtime.getRuntime().exec("killall servod")
