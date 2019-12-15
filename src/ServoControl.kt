@@ -10,13 +10,14 @@ fun main(args: Array<String>){
     //Runtime.getRuntime().exec("sudo ~/PiBits/ServoBlaster/user/servod --p1pins=7")
     //Thread.sleep(2000)
 
-    val servoProvider = RPIServoBlasterProvider()
 
-    val servo0 = servoProvider.getServoDriver(servoProvider.definedServoPins[5])
 
     // Set raw value for this servo driver - 50 to 250
 
-    // Example 1
+    // Example 1.
+    /*val servoProvider = RPIServoBlasterProvider()
+    val servo0 = servoProvider.getServoDriver(servoProvider.definedServoPins[5])
+
     println("Go to 150") //middle
     servo0.servoPulseWidth = 150
     println("Went to ${servo0.servoPulseWidth}")
@@ -32,7 +33,7 @@ fun main(args: Array<String>){
     println("Go to 150")
     servo0.servoPulseWidth = 150
     println("Went to ${servo0.servoPulseWidth}")
-    Thread.sleep(1550)
+    Thread.sleep(1550)*/
     //println("Go to 0") // wrong value
     //servo0.servoPulseWidth = 0
     //println("Went to ${servo0.servoPulseWidth}")
@@ -76,6 +77,7 @@ fun main(args: Array<String>){
     Thread.sleep(1550)
     println(cmdMidPosition)
     runtime.exec(cmdMidPosition)//.waitFor()
+    Thread.sleep(1550)
 
     // kill servo blaster
     //Runtime.getRuntime().exec("killall servod")
