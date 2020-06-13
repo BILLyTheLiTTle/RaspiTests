@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e330a1-7083-4970-a7c4-a87544577c3b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ServoControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServoControl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RCCarMotorControl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +17,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ServoControl.kt">
+        <entry file="file://$PROJECT_DIR$/src/RCCarMotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            <state relative-caret-position="234">
+              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#330#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="27" column="98" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriver.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1368">
+              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#98#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +84,7 @@
         <option value="$PROJECT_DIR$/src/BTS7960MotorDriver.kt" />
         <option value="$PROJECT_DIR$/src/BTS7960MotorDriverFrom74HC4053.kt" />
         <option value="$PROJECT_DIR$/src/ServoControl.kt" />
+        <option value="$PROJECT_DIR$/src/RCCarMotorControl.kt" />
       </list>
     </option>
   </component>
@@ -71,8 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,8 +131,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544337232108" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/pi4j-gpio-extension.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592064200678" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -158,7 +186,7 @@
     </configuration>
     <configuration name="Raspberry Pi 3" type="Run as an Embedded Java application" factoryName="Embedded Linux JVM">
       <option name="classesDirectory" />
-      <option name="hostname" value="192.168.1.7" />
+      <option name="hostname" value="192.168.1.6" />
       <option name="keyPath" value="" />
       <option name="password" value="raspberry" />
       <option name="port" value="1234" />
@@ -169,7 +197,7 @@
       <option name="usingKey" value="false" />
       <option name="vmParameters" value="" />
       <option name="moduleName" value="RaspiTests" />
-      <option name="mainclass" value="ServoControlKt" />
+      <option name="mainclass" value="RCCarMotorControlKt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,16 +281,19 @@
       <workItem from="1576362021471" duration="2419000" />
       <workItem from="1576431443344" duration="5745000" />
       <workItem from="1576442643351" duration="1350000" />
+      <workItem from="1576581787600" duration="716000" />
+      <workItem from="1576651648491" duration="1229000" />
+      <workItem from="1592062413906" duration="1854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90112000" />
+    <option name="totallyTimeSpent" value="93911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18463181" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30683032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -271,7 +302,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39425287" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25918153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,13 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="77" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -417,16 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriver.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="98" column="5" selection-start-line="92" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriverFrom74HC4053.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -439,8 +453,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServoControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        <state relative-caret-position="108">
+          <caret line="6" column="30" selection-start-line="6" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriver.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="98" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RCCarMotorControl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#330#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
