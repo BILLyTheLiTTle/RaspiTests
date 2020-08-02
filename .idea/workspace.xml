@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e330a1-7083-4970-a7c4-a87544577c3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/RCCarMotorControl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/META-INF/RaspiTests.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RaspiTests/ServoControlKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RCCarMotorControl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/RCCarMotorControl.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,32 +17,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RCCarMotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+            <state relative-caret-position="291">
+              <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
               <folding>
-                <element signature="e#0#330#0" expanded="true" />
+                <element signature="e#0#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControl.kt">
+        <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControlArbitraryGpioCS.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="27" column="98" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="98" />
+              <caret line="23" column="98" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BTS7960MotorDriver.kt">
+        <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#98#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -99,8 +94,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,7 +181,7 @@
     </configuration>
     <configuration name="Raspberry Pi 3" type="Run as an Embedded Java application" factoryName="Embedded Linux JVM">
       <option name="classesDirectory" />
-      <option name="hostname" value="192.168.1.6" />
+      <option name="hostname" value="192.168.1.8" />
       <option name="keyPath" value="" />
       <option name="password" value="raspberry" />
       <option name="port" value="1234" />
@@ -288,12 +283,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93911000" />
+    <option name="totallyTimeSpent" value="97872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-2" width="1920" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30683032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31430095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -302,7 +298,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25918153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25918153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -375,13 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControlArbitraryGpioCS.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SystemInfo.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -398,8 +387,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MotorControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="120" column="31" lean-forward="true" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+        <state relative-caret-position="270">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -475,12 +464,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MCP23S17MotorControlArbitraryGpioCS.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="98" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RCCarMotorControl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+        <state relative-caret-position="291">
+          <caret line="86" column="21" lean-forward="true" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
           <folding>
-            <element signature="e#0#330#0" expanded="true" />
+            <element signature="e#0#254#0" expanded="true" />
           </folding>
         </state>
       </provider>
