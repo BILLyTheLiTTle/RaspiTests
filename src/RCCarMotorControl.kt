@@ -30,16 +30,16 @@ private val FRONT_MULTIPLEXER_SELECTOR_2 = GPIO_A1
 private val FRONT_MULTIPLEXER_SELECTOR_3 = GPIO_A2
 
 private lateinit var motorFrontRightPwmPin: GpioPinPwmOutput
-private lateinit var motorsFrontForwardDirPin: GpioPinDigitalOutput
-private lateinit var motorFrontLeftPwmPin: GpioPinPwmOutput
-private lateinit var motorsFrontBackwardDirPin: GpioPinDigitalOutput
-private lateinit var motorRearRightPwmPin: GpioPinPwmOutput
-private lateinit var motorsRearForwardDirPin: GpioPinDigitalOutput
-private lateinit var motorRearLeftPwmPin: GpioPinPwmOutput
-private lateinit var motorsRearBackwardDirPin: GpioPinDigitalOutput
+private lateinit var motorFrontRightDirPin: GpioPinDigitalOutput
 private lateinit var motorFrontRightEnablerPin: GpioPinDigitalOutput
+private lateinit var motorFrontLeftPwmPin: GpioPinPwmOutput
+private lateinit var motorFrontLeftDirPin: GpioPinDigitalOutput
 private lateinit var motorFrontLeftEnablerPin: GpioPinDigitalOutput
+private lateinit var motorRearRightPwmPin: GpioPinPwmOutput
+private lateinit var motorRearRightDirPin: GpioPinDigitalOutput
 private lateinit var motorRearRightEnablerPin: GpioPinDigitalOutput
+private lateinit var motorRearLeftPwmPin: GpioPinPwmOutput
+private lateinit var motorRearLeftDirPin: GpioPinDigitalOutput
 private lateinit var motorRearLeftEnablerPin: GpioPinDigitalOutput
 
 private lateinit var gpio: GpioController
@@ -57,44 +57,52 @@ fun main(args: Array<String>) {
 
     initialize()
 
+    /* The right motors should rotate CW (R_PWM=1, Sn=0) and the left CCW (L_PWM=1, Sn=1) for forward movement.
+
+     */
+
     val direction = 1 // 0 - Forward, 1 - Backward
 
     if(direction == 0) {
-        motorsFrontForwardDirPin.high()
-        motorsRearForwardDirPin.high()
+        motorFrontRightDirPin.low()
+        motorFrontLeftDirPin.high()
+        motorRearRightDirPin.low()
+        //motorRearLeftDirPin.high()
     }
     else if (direction == 1) {
-        motorsFrontBackwardDirPin.high()
-        motorsRearBackwardDirPin.high()
+        motorFrontRightDirPin.high()
+        motorFrontLeftDirPin.low()
+        motorRearRightDirPin.high()
+        //motorRearLeftDirPin.low()
     }
     else {
-        motorsFrontForwardDirPin.low()
-        motorsRearForwardDirPin.low()
-        motorsFrontBackwardDirPin.low()
-        motorsRearBackwardDirPin.low()
+        motorFrontRightEnablerPin.low()
+        motorFrontLeftEnablerPin.low()
+        motorRearRightEnablerPin.low()
+        //motorRearLeftEnablerPin.low()
     }
 
-    for (i in 1..3) {
-        motorFrontLeftPwmPin.pwm = 0
+    for (i in 1..1) {
         motorFrontRightPwmPin.pwm = 0
-        motorRearLeftPwmPin.pwm = 0
-        motorRearRightPwmPin.pwm = 0
-        Thread.sleep(500)
-        motorFrontLeftPwmPin.pwm = 100
-        motorFrontRightPwmPin.pwm = 100
-        motorRearLeftPwmPin.pwm = 100
-        motorRearRightPwmPin.pwm = 100
-        Thread.sleep(500)
         motorFrontLeftPwmPin.pwm = 0
-        motorFrontRightPwmPin.pwm = 0
-        motorRearLeftPwmPin.pwm = 0
         motorRearRightPwmPin.pwm = 0
+        //motorRearLeftPwmPin.pwm = 0
+        Thread.sleep(500)
+        motorFrontRightPwmPin.pwm = 0 //543
+        motorFrontLeftPwmPin.pwm = 0 //513
+        motorRearRightPwmPin.pwm = 0 //513
+        //motorRearLeftPwmPin.pwm = 0 //?
+        Thread.sleep(200)
+        motorFrontRightPwmPin.pwm = 0
+        motorFrontLeftPwmPin.pwm = 0
+        motorRearRightPwmPin.pwm = 0
+        //motorRearLeftPwmPin.pwm = 0
     }
 
-    motorsFrontForwardDirPin.low()
-    motorsRearForwardDirPin.low()
-    motorsFrontBackwardDirPin.low()
-    motorsRearBackwardDirPin.low()
+    motorFrontRightEnablerPin.low()
+    motorFrontLeftEnablerPin.low()
+    //motorRearRightEnablerPin.low()
+    //motorRearLeftEnablerPin.low()
 
     //TODO Apply throttle
     /*applyPinValues(
@@ -107,19 +115,19 @@ fun main(args: Array<String>) {
     gpio.apply {
         shutdown()
         unprovisionPin(motorFrontRightPwmPin)
-        unprovisionPin(motorsFrontForwardDirPin)
-        //unprovisionPin(motorFrontRightEnablerPin)
+        unprovisionPin(motorFrontRightDirPin)
+        unprovisionPin(motorFrontRightEnablerPin)
 
         unprovisionPin(motorFrontLeftPwmPin)
-        unprovisionPin(motorsFrontBackwardDirPin)
-        //unprovisionPin(motorFrontLeftEnablerPin)
+        unprovisionPin(motorFrontLeftDirPin)
+        unprovisionPin(motorFrontLeftEnablerPin)
 
         unprovisionPin(motorRearRightPwmPin)
-        unprovisionPin(motorsRearForwardDirPin)
-        //unprovisionPin(motorRearRightEnablerPin)
+        unprovisionPin(motorRearRightDirPin)
+        unprovisionPin(motorRearRightEnablerPin)
 
-        unprovisionPin(motorRearLeftPwmPin)
-        unprovisionPin(motorsRearBackwardDirPin)
+        //unprovisionPin(motorRearLeftPwmPin)
+        //unprovisionPin(motorRearLeftDirPin)
         //unprovisionPin(motorRearLeftEnablerPin)
     }
 }
@@ -146,14 +154,7 @@ fun main(args: Array<String>) {
 
 private fun initialize() {
 
-    /* == Front Motors Direction == */
-    motorsFrontBackwardDirPin = gpio.provisionDigitalOutputPin(
-        provider, FRONT_MULTIPLEXER_SELECTOR_2,
-        "Front Motors Backward Dir Pin", PinState.LOW)
-
-    motorsFrontForwardDirPin = gpio.provisionDigitalOutputPin(
-        provider, FRONT_MULTIPLEXER_SELECTOR_1,
-        "Front Motors Forward Dir Pin", PinState.LOW)
+    /* = Front Motors = */
 
     /* == Front Right Motor == */
     val motorFrontRightPin = CommandArgumentParser.getPin(
@@ -162,11 +163,15 @@ private fun initialize() {
         null
     )
     motorFrontRightPwmPin = gpio.provisionPwmOutputPin(motorFrontRightPin)
-    motorFrontRightPwmPin.setPwmRange(100)
+    //motorFrontRightPwmPin.setPwmRange(1000)
 
     motorFrontRightEnablerPin = gpio.provisionDigitalOutputPin(
         provider, FRONT_RIGHT_BRIDGE_ENABLER_PIN,
         "Front Right Motor En Pin", PinState.HIGH)
+
+    motorFrontRightDirPin = gpio.provisionDigitalOutputPin(
+        provider, FRONT_MULTIPLEXER_SELECTOR_2,
+        "Front Right Motor Dir Pin", PinState.LOW)
 
     /* == Front Left Motor == */
     val motorFrontLeftPin = CommandArgumentParser.getPin(
@@ -175,20 +180,18 @@ private fun initialize() {
         null
     )
     motorFrontLeftPwmPin = gpio.provisionPwmOutputPin(motorFrontLeftPin)
-    motorFrontLeftPwmPin.setPwmRange(100)
+    //motorFrontLeftPwmPin.setPwmRange(100)
 
     motorFrontLeftEnablerPin = gpio.provisionDigitalOutputPin(
         provider, FRONT_LEFT_BRIDGE_ENABLER_PIN,
-        "Front Right Motor En Pin", PinState.HIGH)
+        "Front Left Motor En Pin", PinState.HIGH)
 
-    /* == Rear Motors Direction == */
-    motorsRearBackwardDirPin = gpio.provisionDigitalOutputPin(
-        provider, REAR_MULTIPLEXER_SELECTOR_2,
-        "Rear Motors Backward Dir Pin", PinState.LOW)
+    motorFrontLeftDirPin = gpio.provisionDigitalOutputPin(
+        provider, FRONT_MULTIPLEXER_SELECTOR_1,
+        "Front Left Motor Dir Pin", PinState.LOW)
 
-    motorsRearForwardDirPin = gpio.provisionDigitalOutputPin(
-        provider, REAR_MULTIPLEXER_SELECTOR_1,
-        "Rear Motors Forward Dir Pin", PinState.LOW)
+
+    /* = Rear Motors = */
 
     /* == Rear Right Motor == */
     val motorRearRightPin = CommandArgumentParser.getPin(
@@ -197,22 +200,30 @@ private fun initialize() {
         null
     )
     motorRearRightPwmPin = gpio.provisionPwmOutputPin(motorRearRightPin)
-    motorRearRightPwmPin.setPwmRange(100)
+    //motorRearRightPwmPin.setPwmRange(100)
 
     motorRearRightEnablerPin = gpio.provisionDigitalOutputPin(
         provider, REAR_RIGHT_BRIDGE_ENABLER_PIN,
         "Rear Right Motor En Pin", PinState.HIGH)
 
-    /* == Rear Left Motor == */
-    val motorRearLeftPin = CommandArgumentParser.getPin(
-        RaspiPin::class.java, // pin provider class to obtain pin instance from
-        MOTOR_REAR_LEFT_PWM_PIN, // default pin if no pin argument found
-        null
-    )
-    motorRearLeftPwmPin = gpio.provisionPwmOutputPin(motorRearLeftPin)
-    motorRearLeftPwmPin.setPwmRange(100)
+    motorRearRightDirPin = gpio.provisionDigitalOutputPin(
+        provider, REAR_MULTIPLEXER_SELECTOR_2,
+        "Rear Right Motor Dir Pin", PinState.LOW)
 
-    motorRearLeftEnablerPin = gpio.provisionDigitalOutputPin(
-        provider, REAR_LEFT_BRIDGE_ENABLER_PIN,
-        "Rear Left Motor En Pin", PinState.HIGH)
+    /* == Rear Left Motor == */
+    //val motorRearLeftPin = CommandArgumentParser.getPin(
+    //    RaspiPin::class.java, // pin provider class to obtain pin instance from
+    //    MOTOR_REAR_LEFT_PWM_PIN, // default pin if no pin argument found
+    //    null
+    //)
+    //motorRearLeftPwmPin = gpio.provisionPwmOutputPin(motorRearLeftPin)
+    //motorRearLeftPwmPin.setPwmRange(100)
+
+    //motorRearLeftEnablerPin = gpio.provisionDigitalOutputPin(
+    //    provider, REAR_LEFT_BRIDGE_ENABLER_PIN,
+    //    "Rear Left Motor En Pin", PinState.HIGH)
+
+    //motorRearLeftDirPin = gpio.provisionDigitalOutputPin(
+    //    provider, REAR_MULTIPLEXER_SELECTOR_1,
+    //    "Rear Left Motor Dir Pin", PinState.LOW)
 }
