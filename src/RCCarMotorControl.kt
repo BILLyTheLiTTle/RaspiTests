@@ -4,6 +4,7 @@ import com.pi4j.gpio.extension.mcp.MCP23S17Pin.*
 import com.pi4j.io.gpio.*
 import com.pi4j.io.spi.SpiChannel
 import com.pi4j.util.CommandArgumentParser
+import com.pi4j.wiringpi.Gpio
 
 /* == From RasPi to Rear 74HC4053(IC1) == */
 private val MOTOR_FRONT_RIGHT_PWM_PIN = RaspiPin.GPIO_24
@@ -64,45 +65,46 @@ fun main(args: Array<String>) {
     val direction = 1 // 0 - Forward, 1 - Backward
 
     if(direction == 0) {
-        //motorFrontRightDirPin.low()
-        //motorFrontLeftDirPin.high()
+        motorFrontRightDirPin.low()
+        motorFrontLeftDirPin.high()
         motorRearRightDirPin.low()
-        //motorRearLeftDirPin.high()
+        motorRearLeftDirPin.high()
     }
     else if (direction == 1) {
-        //motorFrontRightDirPin.high()
-        //motorFrontLeftDirPin.low()
+        motorFrontRightDirPin.high()
+        motorFrontLeftDirPin.low()
         motorRearRightDirPin.high()
-        //motorRearLeftDirPin.low()
+        motorRearLeftDirPin.low()
     }
     else {
-        //motorFrontRightEnablerPin.low()
-        //motorFrontLeftEnablerPin.low()
+        motorFrontRightEnablerPin.low()
+        motorFrontLeftEnablerPin.low()
         motorRearRightEnablerPin.low()
-        //motorRearLeftEnablerPin.low()
+        motorRearLeftEnablerPin.low()
     }
 
     for (i in 1..1) {
-        //motorFrontRightPwmPin.pwm = 0
-        //motorFrontLeftPwmPin.pwm = 0
+        motorFrontRightPwmPin.pwm = 0
+        motorFrontLeftPwmPin.pwm = 0
         motorRearRightPwmPin.pwm = 0
-        //motorRearLeftPwmPin.pwm = 0
+        motorRearLeftPwmPin.pwm = 0
         Thread.sleep(500)
-        //motorFrontRightPwmPin.pwm = 0 //543
-        //motorFrontLeftPwmPin.pwm = 0 //513
-        motorRearRightPwmPin.pwm = 513 //513
-        //motorRearLeftPwmPin.pwm = 0 //513
-        Thread.sleep(200)
-        //motorFrontRightPwmPin.pwm = 0
-        //motorFrontLeftPwmPin.pwm = 0
+        // In order to have movement to 4 motors simultaneously the minimum value is 543/1024
+        motorFrontRightPwmPin.pwm = 543 //543
+        motorFrontLeftPwmPin.pwm = 543 //513
+        motorRearRightPwmPin.pwm = 543 //513
+        motorRearLeftPwmPin.pwm = 543 //513
+        Thread.sleep(500)
+        motorFrontRightPwmPin.pwm = 0
+        motorFrontLeftPwmPin.pwm = 0
         motorRearRightPwmPin.pwm = 0
-        //motorRearLeftPwmPin.pwm = 0
+        motorRearLeftPwmPin.pwm = 0
     }
 
-    //motorFrontRightEnablerPin.low()
-    //motorFrontLeftEnablerPin.low()
+    motorFrontRightEnablerPin.low()
+    motorFrontLeftEnablerPin.low()
     motorRearRightEnablerPin.low()
-    //motorRearLeftEnablerPin.low()
+    motorRearLeftEnablerPin.low()
 
     //TODO Apply throttle
     /*applyPinValues(
@@ -114,21 +116,21 @@ fun main(args: Array<String>) {
 
     gpio.apply {
         shutdown()
-        //unprovisionPin(motorFrontRightPwmPin)
-        //unprovisionPin(motorFrontRightDirPin)
-        //unprovisionPin(motorFrontRightEnablerPin)
+        unprovisionPin(motorFrontRightPwmPin)
+        unprovisionPin(motorFrontRightDirPin)
+        unprovisionPin(motorFrontRightEnablerPin)
 
-        //unprovisionPin(motorFrontLeftPwmPin)
-        //unprovisionPin(motorFrontLeftDirPin)
-        //unprovisionPin(motorFrontLeftEnablerPin)
+        unprovisionPin(motorFrontLeftPwmPin)
+        unprovisionPin(motorFrontLeftDirPin)
+        unprovisionPin(motorFrontLeftEnablerPin)
 
         unprovisionPin(motorRearRightPwmPin)
         unprovisionPin(motorRearRightDirPin)
         unprovisionPin(motorRearRightEnablerPin)
 
-        //unprovisionPin(motorRearLeftPwmPin)
-        //unprovisionPin(motorRearLeftDirPin)
-        //unprovisionPin(motorRearLeftEnablerPin)
+        unprovisionPin(motorRearLeftPwmPin)
+        unprovisionPin(motorRearLeftDirPin)
+        unprovisionPin(motorRearLeftEnablerPin)
     }
 }
 
@@ -157,7 +159,7 @@ private fun initialize() {
     /* = Front Motors = */
 
     /* == Front Right Motor == */
-    /*val motorFrontRightPin = CommandArgumentParser.getPin(
+    val motorFrontRightPin = CommandArgumentParser.getPin(
         RaspiPin::class.java, // pin provider class to obtain pin instance from
         MOTOR_FRONT_RIGHT_PWM_PIN, // default pin if no pin argument found
         null
@@ -171,10 +173,10 @@ private fun initialize() {
 
     motorFrontRightDirPin = gpio.provisionDigitalOutputPin(
         provider, FRONT_MULTIPLEXER_SELECTOR_2,
-        "Front Right Motor Dir Pin", PinState.LOW)*/
+        "Front Right Motor Dir Pin", PinState.LOW)
 
     /* == Front Left Motor == */
-    /*val motorFrontLeftPin = CommandArgumentParser.getPin(
+    val motorFrontLeftPin = CommandArgumentParser.getPin(
         RaspiPin::class.java, // pin provider class to obtain pin instance from
         MOTOR_FRONT_LEFT_PWM_PIN, // default pin if no pin argument found
         null
@@ -188,7 +190,7 @@ private fun initialize() {
 
     motorFrontLeftDirPin = gpio.provisionDigitalOutputPin(
         provider, FRONT_MULTIPLEXER_SELECTOR_1,
-        "Front Left Motor Dir Pin", PinState.LOW)*/
+        "Front Left Motor Dir Pin", PinState.LOW)
 
 
     /* = Rear Motors = */
@@ -211,7 +213,7 @@ private fun initialize() {
         "Rear Right Motor Dir Pin", PinState.LOW)
 
     /* == Rear Left Motor == */
-    /*val motorRearLeftPin = CommandArgumentParser.getPin(
+    val motorRearLeftPin = CommandArgumentParser.getPin(
         RaspiPin::class.java, // pin provider class to obtain pin instance from
         MOTOR_REAR_LEFT_PWM_PIN, // default pin if no pin argument found
         null
@@ -225,5 +227,5 @@ private fun initialize() {
 
     motorRearLeftDirPin = gpio.provisionDigitalOutputPin(
         provider, REAR_MULTIPLEXER_SELECTOR_1,
-        "Rear Left Motor Dir Pin", PinState.LOW)*/
+        "Rear Left Motor Dir Pin", PinState.LOW)
 }
