@@ -51,6 +51,10 @@ fun main(args: Array<String>) {
     // create gpio controller
     gpio = GpioFactory.getInstance()
 
+    Gpio.pwmSetMode(Gpio.PWM_MODE_MS)
+    //Gpio.pwmSetClock(2)
+    //Gpio.pwmSetRange(200)
+
     println("<--Pi4J--> RCCar motor control ... started.")
 
     provider = MCP23S17GpioProvider(MCP23S17GpioProvider.ADDRESS_0, SpiChannel.CS0)
@@ -62,7 +66,7 @@ fun main(args: Array<String>) {
 
      */
 
-    val direction = 1 // 0 - Forward, 1 - Backward
+    /*val direction = 1 // 0 - Forward, 1 - Backward
 
     if(direction == 0) {
         motorFrontRightDirPin.low()
@@ -89,30 +93,92 @@ fun main(args: Array<String>) {
         motorRearRightPwmPin.pwm = 0
         motorRearLeftPwmPin.pwm = 0
         Thread.sleep(500)
+
         // In order to have movement to 4 motors simultaneously the minimum value is 543/1024
         motorFrontRightPwmPin.pwm = 543 //543
         motorFrontLeftPwmPin.pwm = 543 //513
         motorRearRightPwmPin.pwm = 543 //513
         motorRearLeftPwmPin.pwm = 543 //513
-        Thread.sleep(500)
+        Thread.sleep(200)
+
         motorFrontRightPwmPin.pwm = 0
         motorFrontLeftPwmPin.pwm = 0
         motorRearRightPwmPin.pwm = 0
         motorRearLeftPwmPin.pwm = 0
+    }*/
+
+    val actions = arrayOf("forward", "freely", "backward", "freely") // forward, backward, freely, brake, error
+    val delay = 1000L
+    for (action in actions) {
+        println( when (action) {
+            "forward" -> {
+                // TODO set forward direction firstly
+                applyPinValues(
+                    motorFrontRightMovingCW = false, motorFrontRightEnable = true,
+                    motorFrontLeftMovingCW = true, motorFrontLeftEnable = true,
+                    motorRearRightMovingCW = false, motorRearRightEnable = true,
+                    motorRearLeftMovingCW = true, motorRearLeftEnable = true
+                )
+                // TODO set throttle
+                applyPinValues(
+                    motorFrontRightPwm = 544, motorFrontLeftPwm = 544,
+                    motorRearRightPwm = 544, motorRearLeftPwm = 544
+                )
+                "FORWARD"
+            }
+            "backward" -> {
+                // TODO set backward direction firstly
+                applyPinValues(
+                    motorFrontRightMovingCW = true, motorFrontRightEnable = true,
+                    motorFrontLeftMovingCW = false, motorFrontLeftEnable = true,
+                    motorRearRightMovingCW = true, motorRearRightEnable = true,
+                    motorRearLeftMovingCW = false, motorRearLeftEnable = true
+                )
+                // TODO set throttle
+                applyPinValues(
+                    motorFrontRightPwm = 4096, motorFrontLeftPwm = 4096,
+                    motorRearRightPwm = 4096, motorRearLeftPwm = 4096
+                )
+                "BACKWARD"
+            }
+            "freely" -> {
+                // TODO move freely
+                applyPinValues(
+                    0, false, false,
+                    0, false, false,
+                    0, false, false,
+                    0, false, false
+                )
+                "FREELY"
+            }
+            "brake" -> {
+                // TODO brake
+                applyPinValues(
+                    0, false, true,
+                    0, false, true,
+                    0, false, true,
+                    0, false, true
+                )
+                "BRAKE"
+            }
+            else -> "Should not happen"
+        })
+        Thread.sleep(delay)
     }
+
+    // Reset
+    applyPinValues(
+        0, false, false,
+        0, true, false,
+        0, false, false,
+        0, true, false
+    )
 
     motorFrontRightEnablerPin.low()
     motorFrontLeftEnablerPin.low()
     motorRearRightEnablerPin.low()
     motorRearLeftEnablerPin.low()
 
-    //TODO Apply throttle
-    /*applyPinValues(
-        0, false, false,
-        0, false, false,
-        0, false, false,
-        0, false, false
-    )*/
 
     gpio.apply {
         shutdown()
@@ -134,25 +200,25 @@ fun main(args: Array<String>) {
     }
 }
 
-/*private fun applyPinValues(
-    motorFrontRightPwm: Int? = null, motorFrontRightMovingForward: Boolean? = null, motorFrontRightEnable: Boolean? = null,
-    motorFrontLeftPwm: Int? = null, motorFrontLeftMovingForward: Boolean? = null, motorFrontLeftEnable: Boolean? = null,
-    motorRearRightPwm: Int? = null, motorRearRightMovingForward: Boolean? = null, motorRearRightEnable: Boolean? = null,
-    motorRearLeftPwm: Int? = null, motorRearLeftMovingForward: Boolean? = null, motorRearLeftEnable: Boolean? = null){
+private fun applyPinValues(
+    motorFrontRightPwm: Int? = null, motorFrontRightMovingCW: Boolean? = null, motorFrontRightEnable: Boolean? = null,
+    motorFrontLeftPwm: Int? = null, motorFrontLeftMovingCW: Boolean? = null, motorFrontLeftEnable: Boolean? = null,
+    motorRearRightPwm: Int? = null, motorRearRightMovingCW: Boolean? = null, motorRearRightEnable: Boolean? = null,
+    motorRearLeftPwm: Int? = null, motorRearLeftMovingCW: Boolean? = null, motorRearLeftEnable: Boolean? = null){
 
     motorFrontRightPwm?.let { motorFrontRightPwmPin.pwm = it }
-    motorFrontRightMovingForward?.let { motorFrontRightDirPin.setState(it) }
+    motorFrontRightMovingCW?.let { motorFrontRightDirPin.setState(it) }
     motorFrontRightEnable?.let { motorFrontRightEnablerPin.setState(it) }
     motorFrontLeftPwm?.let { motorFrontLeftPwmPin.pwm = it }
-    motorFrontLeftMovingForward?.let { motorFrontLeftDirPin.setState(it) }
+    motorFrontLeftMovingCW?.let { motorFrontLeftDirPin.setState(it) }
     motorFrontLeftEnable?.let { motorFrontLeftEnablerPin.setState(it) }
     motorRearRightPwm?.let { motorRearRightPwmPin.pwm = it }
-    motorRearRightMovingForward?.let { motorRearRightDirPin.setState(it) }
+    motorRearRightMovingCW?.let { motorRearRightDirPin.setState(it) }
     motorRearRightEnable?.let { motorRearRightEnablerPin.setState(it) }
     motorRearLeftPwm?.let { motorRearLeftPwmPin.pwm = it }
-    motorRearLeftMovingForward?.let { motorRearLeftDirPin.setState(it) }
+    motorRearLeftMovingCW?.let { motorRearLeftDirPin.setState(it) }
     motorRearLeftEnable?.let { motorRearLeftEnablerPin.setState(it) }
-}*/
+}
 
 private fun initialize() {
 
