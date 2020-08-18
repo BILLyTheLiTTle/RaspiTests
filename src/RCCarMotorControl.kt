@@ -66,7 +66,7 @@ fun main(args: Array<String>) {
 
      */
 
-    /*val direction = 1 // 0 - Forward, 1 - Backward
+    /*val direction = 0 // 0 - Forward, 1 - Backward
 
     if(direction == 0) {
         motorFrontRightDirPin.low()
@@ -95,11 +95,12 @@ fun main(args: Array<String>) {
         Thread.sleep(500)
 
         // In order to have movement to 4 motors simultaneously the minimum value is 543/1024
-        motorFrontRightPwmPin.pwm = 543 //543
-        motorFrontLeftPwmPin.pwm = 543 //513
-        motorRearRightPwmPin.pwm = 543 //513
-        motorRearLeftPwmPin.pwm = 543 //513
-        Thread.sleep(200)
+        motorFrontRightPwmPin.pwm = 544 //543
+        motorFrontLeftPwmPin.pwm = 544 //513
+        motorRearRightPwmPin.pwm = 544 //513
+        motorRearLeftPwmPin.pwm = 544 //513
+        println("Moving...")
+        Thread.sleep(4200)
 
         motorFrontRightPwmPin.pwm = 0
         motorFrontLeftPwmPin.pwm = 0
@@ -107,57 +108,68 @@ fun main(args: Array<String>) {
         motorRearLeftPwmPin.pwm = 0
     }*/
 
-    val actions = arrayOf("forward", "freely", "backward", "freely") // forward, backward, freely, brake, error
-    val delay = 1000L
+    val actions = arrayOf("forward", "brake", "backward", "freely") // forward, backward, freely, brake, error
+    val delay = 3000L
     for (action in actions) {
         println( when (action) {
             "forward" -> {
                 // TODO set forward direction firstly
                 applyPinValues(
-                    motorFrontRightMovingCW = false, motorFrontRightEnable = true,
-                    motorFrontLeftMovingCW = true, motorFrontLeftEnable = true,
-                    motorRearRightMovingCW = false, motorRearRightEnable = true,
-                    motorRearLeftMovingCW = true, motorRearLeftEnable = true
+                    motorFrontRightMovingCW = PinState.LOW, motorFrontRightEnable = PinState.HIGH,
+                    motorFrontLeftMovingCW = PinState.HIGH, motorFrontLeftEnable = PinState.HIGH,
+                    motorRearRightMovingCW = PinState.LOW, motorRearRightEnable = PinState.HIGH,
+                    motorRearLeftMovingCW = PinState.HIGH, motorRearLeftEnable = PinState.HIGH
                 )
                 // TODO set throttle
                 applyPinValues(
                     motorFrontRightPwm = 544, motorFrontLeftPwm = 544,
                     motorRearRightPwm = 544, motorRearLeftPwm = 544
                 )
+                Thread.sleep(1000)
+                /*applyPinValues(
+                    motorFrontRightPwm = 800, motorFrontLeftPwm = 800,
+                    motorRearRightPwm = 800, motorRearLeftPwm = 800
+                )
+                Thread.sleep(1000)*/
+                applyPinValues(
+                    motorFrontRightPwm = 1024, motorFrontLeftPwm = 1024,
+                    motorRearRightPwm = 1024, motorRearLeftPwm = 1024
+                )
+                Thread.sleep(1000)
                 "FORWARD"
             }
             "backward" -> {
                 // TODO set backward direction firstly
                 applyPinValues(
-                    motorFrontRightMovingCW = true, motorFrontRightEnable = true,
-                    motorFrontLeftMovingCW = false, motorFrontLeftEnable = true,
-                    motorRearRightMovingCW = true, motorRearRightEnable = true,
-                    motorRearLeftMovingCW = false, motorRearLeftEnable = true
+                    motorFrontRightMovingCW = PinState.HIGH, motorFrontRightEnable = PinState.HIGH,
+                    motorFrontLeftMovingCW = PinState.LOW, motorFrontLeftEnable = PinState.HIGH,
+                    motorRearRightMovingCW = PinState.HIGH, motorRearRightEnable = PinState.HIGH,
+                    motorRearLeftMovingCW = PinState.LOW, motorRearLeftEnable = PinState.HIGH
                 )
                 // TODO set throttle
                 applyPinValues(
-                    motorFrontRightPwm = 4096, motorFrontLeftPwm = 4096,
-                    motorRearRightPwm = 4096, motorRearLeftPwm = 4096
+                    motorFrontRightPwm = 0, motorFrontLeftPwm = 0,
+                    motorRearRightPwm = 1024, motorRearLeftPwm = 0
                 )
                 "BACKWARD"
             }
             "freely" -> {
                 // TODO move freely
                 applyPinValues(
-                    0, false, false,
-                    0, false, false,
-                    0, false, false,
-                    0, false, false
+                    0, PinState.LOW, PinState.LOW,
+                    0, PinState.LOW, PinState.LOW,
+                    0, PinState.LOW, PinState.LOW,
+                    0, PinState.LOW, PinState.LOW
                 )
                 "FREELY"
             }
             "brake" -> {
                 // TODO brake
                 applyPinValues(
-                    0, false, true,
-                    0, false, true,
-                    0, false, true,
-                    0, false, true
+                    0, PinState.LOW, PinState.HIGH,
+                    0, PinState.LOW, PinState.HIGH,
+                    0, PinState.LOW, PinState.HIGH,
+                    0, PinState.LOW, PinState.HIGH
                 )
                 "BRAKE"
             }
@@ -168,10 +180,10 @@ fun main(args: Array<String>) {
 
     // Reset
     applyPinValues(
-        0, false, false,
-        0, true, false,
-        0, false, false,
-        0, true, false
+        0, PinState.LOW, PinState.LOW,
+        0, PinState.HIGH, PinState.LOW,
+        0, PinState.LOW, PinState.LOW,
+        0, PinState.HIGH, PinState.LOW
     )
 
     motorFrontRightEnablerPin.low()
@@ -201,23 +213,23 @@ fun main(args: Array<String>) {
 }
 
 private fun applyPinValues(
-    motorFrontRightPwm: Int? = null, motorFrontRightMovingCW: Boolean? = null, motorFrontRightEnable: Boolean? = null,
-    motorFrontLeftPwm: Int? = null, motorFrontLeftMovingCW: Boolean? = null, motorFrontLeftEnable: Boolean? = null,
-    motorRearRightPwm: Int? = null, motorRearRightMovingCW: Boolean? = null, motorRearRightEnable: Boolean? = null,
-    motorRearLeftPwm: Int? = null, motorRearLeftMovingCW: Boolean? = null, motorRearLeftEnable: Boolean? = null){
+    motorFrontRightPwm: Int? = null, motorFrontRightMovingCW: PinState? = null, motorFrontRightEnable: PinState? = null,
+    motorFrontLeftPwm: Int? = null, motorFrontLeftMovingCW: PinState? = null, motorFrontLeftEnable: PinState? = null,
+    motorRearRightPwm: Int? = null, motorRearRightMovingCW: PinState? = null, motorRearRightEnable: PinState? = null,
+    motorRearLeftPwm: Int? = null, motorRearLeftMovingCW: PinState? = null, motorRearLeftEnable: PinState? = null){
 
     motorFrontRightPwm?.let { motorFrontRightPwmPin.pwm = it }
-    motorFrontRightMovingCW?.let { motorFrontRightDirPin.setState(it) }
-    motorFrontRightEnable?.let { motorFrontRightEnablerPin.setState(it) }
+    motorFrontRightMovingCW?.let { motorFrontRightDirPin.state = it }
+    motorFrontRightEnable?.let { motorFrontRightEnablerPin.state = it }
     motorFrontLeftPwm?.let { motorFrontLeftPwmPin.pwm = it }
-    motorFrontLeftMovingCW?.let { motorFrontLeftDirPin.setState(it) }
-    motorFrontLeftEnable?.let { motorFrontLeftEnablerPin.setState(it) }
+    motorFrontLeftMovingCW?.let { motorFrontLeftDirPin.state = it }
+    motorFrontLeftEnable?.let { motorFrontLeftEnablerPin.state = it }
     motorRearRightPwm?.let { motorRearRightPwmPin.pwm = it }
-    motorRearRightMovingCW?.let { motorRearRightDirPin.setState(it) }
-    motorRearRightEnable?.let { motorRearRightEnablerPin.setState(it) }
+    motorRearRightMovingCW?.let { motorRearRightDirPin.state = it }
+    motorRearRightEnable?.let { motorRearRightEnablerPin.state = it }
     motorRearLeftPwm?.let { motorRearLeftPwmPin.pwm = it }
-    motorRearLeftMovingCW?.let { motorRearLeftDirPin.setState(it) }
-    motorRearLeftEnable?.let { motorRearLeftEnablerPin.setState(it) }
+    motorRearLeftMovingCW?.let { motorRearLeftDirPin.state = it }
+    motorRearLeftEnable?.let { motorRearLeftEnablerPin.state = it }
 }
 
 private fun initialize() {
