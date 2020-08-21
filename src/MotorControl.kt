@@ -95,9 +95,9 @@ fun main(args: Array<String>){
     )
     val pwmPinEnableM2 = gpio.provisionPwmOutputPin(pinEnableM2)
 
-    Gpio.pwmSetMode(Gpio.PWM_MODE_MS);
-    Gpio.pwmSetRange(100);
-    Gpio.pwmSetClock(500);
+    Gpio.pwmSetMode(Gpio.PWM_MODE_MS)
+    Gpio.pwmSetRange(100)
+    Gpio.pwmSetClock(500)
 
     //Initialize "Input" pins as simple GPIOs
     val pinInput1M1 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_06, "Pin_Input_1_M1")

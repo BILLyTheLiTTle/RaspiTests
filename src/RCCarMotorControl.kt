@@ -66,7 +66,7 @@ fun main(args: Array<String>) {
 
      */
 
-    /*val direction = 0 // 0 - Forward, 1 - Backward
+    val direction = 1 // 0 - Forward, 1 - Backward
 
     if(direction == 0) {
         motorFrontRightDirPin.low()
@@ -100,15 +100,15 @@ fun main(args: Array<String>) {
         motorRearRightPwmPin.pwm = 544 //513
         motorRearLeftPwmPin.pwm = 544 //513
         println("Moving...")
-        Thread.sleep(4200)
+        Thread.sleep(200)
 
         motorFrontRightPwmPin.pwm = 0
         motorFrontLeftPwmPin.pwm = 0
         motorRearRightPwmPin.pwm = 0
         motorRearLeftPwmPin.pwm = 0
-    }*/
+    }
 
-    val actions = arrayOf("forward", "brake", "backward", "freely") // forward, backward, freely, brake, error
+    /*val actions = arrayOf("forward", "brake", "backward", "freely") // forward, backward, freely, brake, error
     val delay = 3000L
     for (action in actions) {
         println( when (action) {
@@ -121,16 +121,19 @@ fun main(args: Array<String>) {
                     motorRearLeftMovingCW = PinState.HIGH, motorRearLeftEnable = PinState.HIGH
                 )
                 // TODO set throttle
+                println("@544")
                 applyPinValues(
                     motorFrontRightPwm = 544, motorFrontLeftPwm = 544,
                     motorRearRightPwm = 544, motorRearLeftPwm = 544
                 )
                 Thread.sleep(1000)
-                /*applyPinValues(
+                println("@800")
+                applyPinValues(
                     motorFrontRightPwm = 800, motorFrontLeftPwm = 800,
                     motorRearRightPwm = 800, motorRearLeftPwm = 800
                 )
-                Thread.sleep(1000)*/
+                Thread.sleep(1000)
+                println("@1024")
                 applyPinValues(
                     motorFrontRightPwm = 1024, motorFrontLeftPwm = 1024,
                     motorRearRightPwm = 1024, motorRearLeftPwm = 1024
@@ -148,8 +151,8 @@ fun main(args: Array<String>) {
                 )
                 // TODO set throttle
                 applyPinValues(
-                    motorFrontRightPwm = 0, motorFrontLeftPwm = 0,
-                    motorRearRightPwm = 1024, motorRearLeftPwm = 0
+                    motorFrontRightPwm = 1024, motorFrontLeftPwm = 1024,
+                    motorRearRightPwm = 1024, motorRearLeftPwm = 1024
                 )
                 "BACKWARD"
             }
@@ -184,7 +187,7 @@ fun main(args: Array<String>) {
         0, PinState.HIGH, PinState.LOW,
         0, PinState.LOW, PinState.LOW,
         0, PinState.HIGH, PinState.LOW
-    )
+    )*/
 
     motorFrontRightEnablerPin.low()
     motorFrontLeftEnablerPin.low()
